@@ -1,5 +1,5 @@
 PKG_NAME := pypi-sphinx_mdinclude
-URL = https://files.pythonhosted.org/packages/9f/53/7a4f8c341066f12795a32d544ead6a1a1f0f7d8ccf7fe3465d994437f44a/sphinx_mdinclude-0.5.3.tar.gz
+URL = https://files.pythonhosted.org/packages/29/f9/c6b8cf37c24bb793762343805168118e3d12b5de3af6771212062d1554d6/sphinx_mdinclude-0.5.4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
