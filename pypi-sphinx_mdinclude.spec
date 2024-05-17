@@ -6,10 +6,10 @@
 # autospec commit: 5905be9
 #
 Name     : pypi-sphinx_mdinclude
-Version  : 0.6.0
-Release  : 6
-URL      : https://files.pythonhosted.org/packages/82/7c/458b0259c20ac24c2994ba4bed005814e52bb78cf905183cdebf79928f96/sphinx_mdinclude-0.6.0.tar.gz
-Source0  : https://files.pythonhosted.org/packages/82/7c/458b0259c20ac24c2994ba4bed005814e52bb78cf905183cdebf79928f96/sphinx_mdinclude-0.6.0.tar.gz
+Version  : 0.6.1
+Release  : 7
+URL      : https://files.pythonhosted.org/packages/b5/65/8ad5a9e7534b1322a73c3555d82108f2c46a0d4f3686f61909e7eab27a13/sphinx_mdinclude-0.6.1.tar.gz
+Source0  : https://files.pythonhosted.org/packages/b5/65/8ad5a9e7534b1322a73c3555d82108f2c46a0d4f3686f61909e7eab27a13/sphinx_mdinclude-0.6.1.tar.gz
 Summary  : Markdown extension for Sphinx
 Group    : Development/Tools
 License  : MIT
@@ -52,16 +52,17 @@ Provides: pypi(sphinx_mdinclude)
 Requires: pypi(docutils)
 Requires: pypi(mistune)
 Requires: pypi(pygments)
+Requires: pypi(sphinx)
 
 %description python3
 python3 components for the pypi-sphinx_mdinclude package.
 
 
 %prep
-%setup -q -n sphinx_mdinclude-0.6.0
-cd %{_builddir}/sphinx_mdinclude-0.6.0
+%setup -q -n sphinx_mdinclude-0.6.1
+cd %{_builddir}/sphinx_mdinclude-0.6.1
 pushd ..
-cp -a sphinx_mdinclude-0.6.0 buildavx2
+cp -a sphinx_mdinclude-0.6.1 buildavx2
 popd
 
 %build
@@ -69,7 +70,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1713807855
+export SOURCE_DATE_EPOCH=1715905184
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
